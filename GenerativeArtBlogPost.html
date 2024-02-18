@@ -1,22 +1,113 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Blog Post: Eyes Only, the Installation</title>
-  </head>
-  <body>
-    <h1>The Artistic Origin</h1>
-    <p>This Valentine's Day, I was tasked with contributing to a Valentine's Day installation at Barnard College. 
-      Each artist was asked to program an Arduino ESP32 board.
-      We displayed our ESP32s in hanging envelopes for students in the Computer Science lounge to see on Valentine's day. </p>
+<div class="header">
+  <h2>Eyes Only: A Generative Art Installation</h2>
+</div>
 
-    <p>My artistic vision was strongly shaped by the Valentine's Day installation date.
-    I wanted viewers to connect with my piece through the cultural lens of Valentine's Day. 
-    The installation itself was destined to be displayed in a hanging envelope, which fit well with the Valentine's Day theme. 
-    I leaned into this exterior design element to create a cohesive exterior-interior viewing experience;
-    as the viewer approaches the physical letter encasing my ESP32 display, their expectations are fulfilled when the ESP32 presents them with the text of a letter.
-    But, on a day about celebrating love, I wanted to emphasize an alternative perspective...sending letters as a way of conveying love lost. 
-    </p>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
 
-    <p></p>
-  </body>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
 </html>
